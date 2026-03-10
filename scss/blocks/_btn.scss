@@ -1,0 +1,43 @@
+.btn {
+    background-color: $tan;
+    border: none;
+    padding: 8px 25px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 200ms;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $white ;
+    &:hover {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.btn--green {
+    background-color: $green;
+    border: none;
+    padding: 8px 25px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 200ms;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $white ;
+    &:hover {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

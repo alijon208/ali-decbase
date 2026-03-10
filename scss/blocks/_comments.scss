@@ -1,0 +1,110 @@
+.comments {
+    margin-bottom: 180px;
+}
+
+.comments-title {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.comments-title span {
+    font-size: 20px;
+    color: $gray;
+}
+
+.comments-wp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comments-wp-item {
+    box-shadow: 7px 7px 30px 5px rgba(0, 0, 0, 0.15);
+    max-width: 571px;
+    width: 100%;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    padding: 50px 30px;
+    padding-left: 100px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        background: url(../../img/comments1.jpg);
+        content: '';
+        left: -50px;
+        top: 55px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    &::before {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: url(../../img/string.svg) no-repeat center center;
+        content: '';
+        top: 40px;
+        right: 30px;
+    }
+
+    &:last-child::after {
+        background: url(../../img/comments2.jpg);
+    }
+}
+
+.comments-wp-item h4 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.comments-wp-item h4 span {
+    font-weight: 400;
+    font-size: 18px;
+    color: $gray;
+    flex-wrap: wrap;
+}
+
+.comments-wp-item p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $gray;
+}
+
+@media (max-width:1165px) {
+    .comments-wp {
+        justify-content: center;
+        gap: 30px;
+        padding: 0 50px;
+    }
+
+    .comments-wp-item {
+        padding-left: 30px;
+
+        &::before {
+            top: 20px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .comments-title {
+        font-size: 30px;
+    }
+}

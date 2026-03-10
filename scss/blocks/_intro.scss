@@ -1,0 +1,67 @@
+.intro {
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-title {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $gray;
+    margin-bottom: 15px;
+}
+
+.intro-big {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: 0%;
+    color: $black;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: $gray;
+    margin-bottom: 30px;
+}
+
+.intro-wp button {
+    margin: 0;
+}
+
+.intro-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:990px) {
+    .intro {
+        margin-top: 50px;
+    }
+
+    .intro-container {
+        flex-direction: column-reverse;
+        text-align: start;
+    }
+
+    .intro-img {
+        margin-bottom: 50px;
+    }
+
+    .intro-big {
+        font-size: 50px;
+    }
+}

@@ -1,0 +1,23 @@
+.menu {
+    background: url(../../img/menu.svg) no-repeat center center transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    display: none;
+}
+
+.menu-open {
+    background: url(../../img/x.svg);
+    transform: rotate(90deg);
+}
+
+@media (max-width:990px) {
+    .menu {
+        display: block;
+    }
+}

@@ -1,0 +1,74 @@
+.blog {
+    background-color: $light-gray;
+    padding: 100px 0;
+    margin-bottom: 180px;
+}
+
+.blog-title {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.blog-title span {
+    font-size: 20px;
+    color: $gray;
+}
+
+
+.blog-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 110px;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    max-width: 600px;
+}
+
+.blog-item img {
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+
+.blog-item h4 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.blog-item p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: $gray;
+}
+
+.blog-item button {
+    margin: 0;
+    margin-top: 45px;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:1220px) {
+    .blog-list {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .blog-title {
+        font-size: 30px;
+    }
+}

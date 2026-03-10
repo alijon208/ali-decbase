@@ -1,0 +1,118 @@
+.service {
+    margin-bottom: 200px;
+}
+
+.service-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-title {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 48px;
+    line-height: 78px;
+    letter-spacing: 0%;
+    color: $black;
+}
+
+.service-title span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: $gray;
+}
+
+.service-btn {
+    padding: 7px 11.5px;
+    background-color: $white;
+    box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 200ms;
+    margin-left: 20px;
+
+    &:hover {
+        background-color: $green;
+        color: $white;
+    }
+}
+
+.service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.service-bottom-item {
+    display: flex;
+    align-items: flex-start;
+    width: 425px;
+    height: 195px;
+    gap: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.14);
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding: 25px 35px;
+    transition: 200ms;
+    cursor: pointer;
+    font-size: 30px;
+    &:hover {
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: $tan;
+        color: $white;
+        .service-bottom-item h3, p{
+            color: $white;
+        }
+
+        .service-bottom-item p, h3{
+            color: $white;
+        }
+    }
+}
+
+
+.service-bottom-item h3 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    letter-spacing: 0%;
+    color: $black;
+    margin-bottom: 20px;
+    
+}
+
+.service-bottom-item p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -1%;
+    color: $gray;
+    
+}
+
+@media (max-width:1300px) {
+    .service-bottom {
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .service-top {
+        justify-content: center;
+    }
+
+    .service-btn {
+        display: none;
+    }
+}
